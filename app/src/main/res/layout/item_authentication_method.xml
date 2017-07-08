@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_selector"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:padding="@dimen/offset_tiny">
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:contentDescription="@string/content_description_icon"
+        android:src="@drawable/ic_account_key"/>
+
+    <TextView
+        android:id="@+id/tv_authentication_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/offset_medium"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16"
+        tool:text="@string/title_admin"/>
+</LinearLayout>

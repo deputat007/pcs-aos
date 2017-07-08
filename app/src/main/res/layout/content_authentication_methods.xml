@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wrapper_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_medium"
+        android:layout_marginStart="@dimen/offset_medium"
+        android:layout_marginEnd="@dimen/offset_medium"
+        android:background="?attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/offset_tiny">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:contentDescription="@string/content_description_icon"
+            android:src="@drawable/ic_account_plus"/>
+
+        <TextView
+            android:id="@+id/tv_authentication_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/offset_medium"
+            android:text="@string/title_registration"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_authentication_methods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_default_authentication_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_medium"
+        android:layout_marginTop="@dimen/offset_medium"
+        android:text="@string/text_set_default_authentication_method"/>
+</LinearLayout>
